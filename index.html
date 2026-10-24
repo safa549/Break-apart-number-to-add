@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Break Apart and Build!</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<section id="welcome" class="screen center">
+ <div class="bricks"><i class="brick" style="--c:#e53935"></i><i class="brick" style="--c:#1e88e5"></i><i class="brick" style="--c:#fdd835"></i><i class="brick" style="--c:#43a047"></i><i class="brick" style="--c:#fb8c00"></i></div>
+ <h1>Break Apart<br>and Build!</h1>
+ <p>Split the second number into tens and ones. Add the tens first. Then add the ones!</p>
+ <p><label for="nm"><b>What is your name?</b></label><br><input id="nm" class="name" maxlength="20" autocomplete="off" placeholder="Type your name"></p>
+ <button class="g" id="go">Let’s Build! ▶</button>
+ <p id="nmErr" class="err" aria-live="polite"></p>
+</section>
+<section id="game" class="screen" hidden>
+ <div class="card top"><b id="who"></b><span id="qn"></span><div class="pg"><div id="bar"></div></div><span id="stars"></span><span id="score"></span></div>
+ <h2 id="qt"></h2>
+ <div id="model"></div>
+ <div id="steps"></div>
+ <div id="fb" aria-live="polite"></div>
+ <div class="row"><button class="o" id="hint">💡 Hint</button><button class="g" id="next" hidden>Next Question ▶</button></div>
+</section>
+<section id="report" class="screen" hidden>
+ <h1 class="center" style="font-size:clamp(34px,6vw,56px)">⭐ Build Report ⭐</h1>
+ <h2 class="center" id="rname"></h2>
+ <div class="tiles" id="tiles"></div>
+ <div class="card" style="padding:12px 18px"><h3 style="margin:4px 0">Skills</h3><div id="skills"></div></div>
+ <div class="rec" id="rec"></div>
+ <div class="row noprint"><button class="g" id="again">Play Again 🔁</button><button id="newst">New Student</button><button class="o" id="print">Print Report 🖨</button></div>
+</section>
+<script src="js/script.js"></script></body></html>
